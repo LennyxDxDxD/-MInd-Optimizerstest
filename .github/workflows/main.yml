@@ -1,0 +1,13 @@
+name: Troll Issue
+on:
+  issues:
+    types: [opened, reopened]
+
+jobs:
+  trolling:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1
+        with:
+          comment: Won't fix
